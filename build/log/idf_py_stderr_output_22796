@@ -1,0 +1,35 @@
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- NOTE: Using \\.\COM4 instead...
+--- esp-idf-monitor 1.10.0 on \\.\COM4 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x42009e78: app_main at C:/Users/THINKPAD/esp-idf/do_an_thiet_ke_he_thong_nhung/main/do_an_thiet_ke_he_thong_nhung.cpp:25
+--- 0x4037a8cb: _esp_error_check_failed at C:/Users/THINKPAD/esp-idf/components/esp_system/esp_err.c:49
+--- 0x40375bfd: panic_abort at C:/Users/THINKPAD/esp-idf/components/esp_system/panic.c:454
+--- 0x4037a8d5: esp_system_abort at C:/Users/THINKPAD/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40380f71: abort at C:/Users/THINKPAD/esp-idf/components/newlib/abort.c:38
+--- 0x4037a8cb: _esp_error_check_failed at C:/Users/THINKPAD/esp-idf/components/esp_system/esp_err.c:49
+--- 0x42009e78: app_main at C:/Users/THINKPAD/esp-idf/do_an_thiet_ke_he_thong_nhung/main/do_an_thiet_ke_he_thong_nhung.cpp:25
+--- 0x4201c41f: main_task at C:/Users/THINKPAD/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b30d: vPortTaskWrapper at C:/Users/THINKPAD/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+--- 0x40375b3d: esp_restart_noos at C:/Users/THINKPAD/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+--- 0x42009e78: app_main at C:/Users/THINKPAD/esp-idf/do_an_thiet_ke_he_thong_nhung/main/do_an_thiet_ke_he_thong_nhung.cpp:25
+--- 0x4037a8cb: _esp_error_check_failed at C:/Users/THINKPAD/esp-idf/components/esp_system/esp_err.c:49
+--- 0x40375bfd: panic_abort at C:/Users/THINKPAD/esp-idf/components/esp_system/panic.c:454
+--- 0x4037a8d5: esp_system_abort at C:/Users/THINKPAD/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40380f71: abort at C:/Users/THINKPAD/esp-idf/components/newlib/abort.c:38
+--- 0x4037a8cb: _esp_error_check_failed at C:/Users/THINKPAD/esp-idf/components/esp_system/esp_err.c:49
+--- 0x42009e78: app_main at C:/Users/THINKPAD/esp-idf/do_an_thiet_ke_he_thong_nhung/main/do_an_thiet_ke_he_thong_nhung.cpp:25
+--- 0x4201c41f: main_task at C:/Users/THINKPAD/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b30d: vPortTaskWrapper at C:/Users/THINKPAD/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+--- 0x40375b3d: esp_restart_noos at C:/Users/THINKPAD/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+--- 0x42009e78: app_main at C:/Users/THINKPAD/esp-idf/do_an_thiet_ke_he_thong_nhung/main/do_an_thiet_ke_he_thong_nhung.cpp:25
+--- 0x4037a8cb: _esp_error_check_failed at C:/Users/THINKPAD/esp-idf/components/esp_system/esp_err.c:49
+--- 0x40375bfd: panic_abort at C:/Users/THINKPAD/esp-idf/components/esp_system/panic.c:454
+--- 0x4037a8d5: esp_system_abort at C:/Users/THINKPAD/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x40380f71: abort at C:/Users/THINKPAD/esp-idf/components/newlib/abort.c:38
+--- 0x4037a8cb: _esp_error_check_failed at C:/Users/THINKPAD/esp-idf/components/esp_system/esp_err.c:49
+--- 0x42009e78: app_main at C:/Users/THINKPAD/esp-idf/do_an_thiet_ke_he_thong_nhung/main/do_an_thiet_ke_he_thong_nhung.cpp:25
+--- 0x4201c41f: main_task at C:/Users/THINKPAD/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b30d: vPortTaskWrapper at C:/Users/THINKPAD/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+--- 0x40375b3d: esp_restart_noos at C:/Users/THINKPAD/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+

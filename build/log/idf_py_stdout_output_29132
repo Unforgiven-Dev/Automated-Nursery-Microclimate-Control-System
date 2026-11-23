@@ -1,0 +1,672 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 25 2026 01:51:29[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c710h ( 50960) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c738 vaddr=3fc93200 size=02d24h ( 11556) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f464 vaddr=40374000 size=00bb4h (  2996) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1cbcch (117708) map[0m
+[0;32mI (132) esp_image: segment 4: paddr=0003cbf4 vaddr=40374bb4 size=0e54ch ( 58700) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004b148 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (163) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (163) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (165) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (169) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (173) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (177) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (182) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (187) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (192) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (197) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (201) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (205) esp_psram: Speed: 40MHz[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (942) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (951) cpu_start: Pro cpu start user code[0m
+[0;32mI (951) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (951) app_init: Application information:[0m
+[0;32mI (951) app_init: Project name:     do_an_thiet_ke_he_thong_nhung[0m
+[0;32mI (957) app_init: App version:      v5.4[0m
+[0;32mI (960) app_init: Compile time:     Oct 18 2026 07:42:22[0m
+[0;32mI (965) app_init: ELF file SHA256:  59fbd32cb...[0m
+[0;32mI (970) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (973) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (977) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (981) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (985) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (991) heap_init: At 3FC968C0 len 00052E50 (331 KiB): RAM[0m
+[0;32mI (996) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1001) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1007) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (1012) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1020) spi_flash: detected chip: mxic[0m
+[0;32mI (1022) spi_flash: flash io: dio[0m
+[0;32mI (1025) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1032) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1039) main_task: Started on CPU0[0m
+[0;32mI (1069) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1069) main_task: Calling app_main()[0m
+[0;32mI (1069) i2cdev: [Port 0] First initialization. Configuring bus with SDA=8, SCL=9 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (1079) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1099) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3c0309a0).[0m
+[0;32mI (1099) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3c030dc4, Speed: 400000 Hz).[0m
+[0;32mI (1109) SENSOR: Anh sang: 0 lx[0m
+[1;31mE (1129) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (1129) SENSOR: Loi doc DHT22[0m
+[0;32mI (3129) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (3149) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (3149) SENSOR: Loi doc DHT22[0m
+[0;32mI (5149) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (5169) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (5169) SENSOR: Loi doc DHT22[0m
+[0;32mI (7169) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (7189) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (7189) SENSOR: Loi doc DHT22[0m
+[0;32mI (9189) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (9209) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (9209) SENSOR: Loi doc DHT22[0m
+[0;32mI (11209) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (11229) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (11229) SENSOR: Loi doc DHT22[0m
+[0;32mI (13229) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (13249) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (13249) SENSOR: Loi doc DHT22[0m
+[0;32mI (15249) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (15269) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (15269) SENSOR: Loi doc DHT22[0m
+[0;32mI (17269) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (17289) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (17289) SENSOR: Loi doc DHT22[0m
+[0;32mI (19289) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (19309) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (19309) SENSOR: Loi doc DHT22[0m
+[0;32mI (21309) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (21329) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (21329) SENSOR: Loi doc DHT22[0m
+[0;32mI (23329) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (23349) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (23349) SENSOR: Loi doc DHT22[0m
+[0;32mI (25349) SENSOR: Anh sang: 33 lx[0m
+[1;31mE (25369) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (25369) SENSOR: Loi doc DHT22[0m
+[0;32mI (27369) SENSOR: Anh sang: 33 lx[0m
+[1;31mE (27389) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (27389) SENSOR: Loi doc DHT22[0m
+[0;32mI (29389) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (29409) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (29409) SENSOR: Loi doc DHT22[0m
+[0;32mI (31409) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (31429) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (31429) SENSOR: Loi doc DHT22[0m
+[0;32mI (33429) SENSOR: Anh sang: 30 lx[0m
+[1;31mE (33449) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (33449) SENSOR: Loi doc DHT22[0m
+[0;32mI (35449) SENSOR: Anh sang: 37 lx[0m
+[1;31mE (35469) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (35469) SENSOR: Loi doc DHT22[0m
+[0;32mI (37469) SENSOR: Anh sang: 14 lx[0m
+[1;31mE (37489) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (37489) SENSOR: Loi doc DHT22[0m
+[0;32mI (39489) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (39509) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (39509) SENSOR: Loi doc DHT22[0m
+[0;32mI (41509) SENSOR: Anh sang: 23 lx[0m
+[1;31mE (41529) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (41529) SENSOR: Loi doc DHT22[0m
+[0;32mI (43529) SENSOR: Anh sang: 27 lx[0m
+[1;31mE (43549) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (43549) SENSOR: Loi doc DHT22[0m
+[0;32mI (45549) SENSOR: Anh sang: 24 lx[0m
+[1;31mE (45569) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (45569) SENSOR: Loi doc DHT22[0m
+[0;32mI (47569) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (47589) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (47589) SENSOR: Loi doc DHT22[0m
+[0;32mI (49589) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (49609) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (49609) SENSOR: Loi doc DHT22[0m
+[0;32mI (51609) SENSOR: Anh sang: 25 lx[0m
+[1;31mE (51629) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (51629) SENSOR: Loi doc DHT22[0m
+[0;32mI (53629) SENSOR: Anh sang: 30 lx[0m
+[1;31mE (53649) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (53649) SENSOR: Loi doc DHT22[0m
+[0;32mI (55649) SENSOR: Anh sang: 30 lx[0m
+[1;31mE (55669) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (55669) SENSOR: Loi doc DHT22[0m
+[0;32mI (57669) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (57689) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (57689) SENSOR: Loi doc DHT22[0m
+[0;32mI (59689) SENSOR: Anh sang: 31 lx[0m
+[1;31mE (59709) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (59709) SENSOR: Loi doc DHT22[0m
+[0;32mI (61709) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (61729) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (61729) SENSOR: Loi doc DHT22[0m
+[0;32mI (63729) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (63749) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (63749) SENSOR: Loi doc DHT22[0m
+[0;32mI (65749) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (65769) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (65769) SENSOR: Loi doc DHT22[0m
+[0;32mI (67769) SENSOR: Anh sang: 37 lx[0m
+[1;31mE (67789) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (67789) SENSOR: Loi doc DHT22[0m
+[0;32mI (69789) SENSOR: Anh sang: 37 lx[0m
+[1;31mE (69809) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (69809) SENSOR: Loi doc DHT22[0m
+[0;32mI (71809) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (71829) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (71829) SENSOR: Loi doc DHT22[0m
+[0;32mI (73829) SENSOR: Anh sang: 29 lx[0m
+[1;31mE (73849) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (73849) SENSOR: Loi doc DHT22[0m
+[0;32mI (75849) SENSOR: Anh sang: 110 lx[0m
+[1;31mE (75869) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (75869) SENSOR: Loi doc DHT22[0m
+[0;32mI (77869) SENSOR: Anh sang: 110 lx[0m
+[1;31mE (77889) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (77889) SENSOR: Loi doc DHT22[0m
+[0;32mI (79889) SENSOR: Anh sang: 60 lx[0m
+[1;31mE (79909) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (79909) SENSOR: Loi doc DHT22[0m
+[0;32mI (81909) SENSOR: Anh sang: 44 lx[0m
+[1;31mE (81929) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (81929) SENSOR: Loi doc DHT22[0m
+[0;32mI (83929) SENSOR: Anh sang: 23 lx[0m
+[1;31mE (83949) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (83949) SENSOR: Loi doc DHT22[0m
+[0;32mI (85949) SENSOR: Anh sang: 23 lx[0m
+[1;31mE (85969) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (85969) SENSOR: Loi doc DHT22[0m
+[0;32mI (87969) SENSOR: Anh sang: 21 lx[0m
+[1;31mE (87989) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (87989) SENSOR: Loi doc DHT22[0m
+[0;32mI (89989) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (90009) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (90009) SENSOR: Loi doc DHT22[0m
+[0;32mI (92009) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (92029) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (92029) SENSOR: Loi doc DHT22[0m
+[0;32mI (94029) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (94049) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (94049) SENSOR: Loi doc DHT22[0m
+[0;32mI (96049) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (96069) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (96069) SENSOR: Loi doc DHT22[0m
+[0;32mI (98069) SENSOR: Anh sang: 25 lx[0m
+[1;31mE (98089) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (98089) SENSOR: Loi doc DHT22[0m
+[0;32mI (100089) SENSOR: Anh sang: 26 lx[0m
+[1;31mE (100109) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (100109) SENSOR: Loi doc DHT22[0m
+[0;32mI (102109) SENSOR: Anh sang: 26 lx[0m
+[1;31mE (102129) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (102129) SENSOR: Loi doc DHT22[0m
+[0;32mI (104129) SENSOR: Anh sang: 25 lx[0m
+[1;31mE (104149) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (104149) SENSOR: Loi doc DHT22[0m
+[0;32mI (106149) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (106169) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (106169) SENSOR: Loi doc DHT22[0m
+[0;32mI (108169) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (108189) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (108189) SENSOR: Loi doc DHT22[0m
+[0;32mI (110189) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (110209) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (110209) SENSOR: Loi doc DHT22[0m
+[0;32mI (112209) SENSOR: Anh sang: 24 lx[0m
+[1;31mE (112229) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (112229) SENSOR: Loi doc DHT22[0m
+[0;32mI (114229) SENSOR: Anh sang: 25 lx[0m
+[1;31mE (114249) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (114249) SENSOR: Loi doc DHT22[0m
+[0;32mI (116249) SENSOR: Anh sang: 25 lx[0m
+[1;31mE (116269) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (116269) SENSOR: Loi doc DHT22[0m
+[0;32mI (118269) SENSOR: Anh sang: 26 lx[0m
+[1;31mE (118289) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (118289) SENSOR: Loi doc DHT22[0m
+[0;32mI (120289) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (120309) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (120309) SENSOR: Loi doc DHT22[0m
+[0;32mI (122309) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (122329) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (122329) SENSOR: Loi doc DHT22[0m
+[0;32mI (124329) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (124349) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (124349) SENSOR: Loi doc DHT22[0m
+[0;32mI (126349) SENSOR: Anh sang: 33 lx[0m
+[1;31mE (126369) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (126369) SENSOR: Loi doc DHT22[0m
+[0;32mI (128369) SENSOR: Anh sang: 32 lx[0m
+[1;31mE (128389) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (128389) SENSOR: Loi doc DHT22[0m
+[0;32mI (130389) SENSOR: Anh sang: 28 lx[0m
+[1;31mE (130409) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (130409) SENSOR: Loi doc DHT22[0m
+[0;32mI (132409) SENSOR: Anh sang: 30 lx[0m
+[1;31mE (132429) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (132429) SENSOR: Loi doc DHT22[0m
+[0;32mI (134429) SENSOR: Anh sang: 31 lx[0m
+[1;31mE (134449) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (134449) SENSOR: Loi doc DHT22[0m
+[0;32mI (136449) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (136469) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (136469) SENSOR: Loi doc DHT22[0m
+[0;32mI (138469) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (138489) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (138489) SENSOR: Loi doc DHT22[0m
+[0;32mI (140489) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (140509) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (140509) SENSOR: Loi doc DHT22[0m
+[0;32mI (142509) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (142529) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (142529) SENSOR: Loi doc DHT22[0m
+[0;32mI (144529) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (144549) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (144549) SENSOR: Loi doc DHT22[0m
+[0;32mI (146549) SENSOR: Anh sang: 37 lx[0m
+[1;31mE (146569) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (146569) SENSOR: Loi doc DHT22[0m
+[0;32mI (148569) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (148589) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (148589) SENSOR: Loi doc DHT22[0m
+[0;32mI (150589) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (150609) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (150609) SENSOR: Loi doc DHT22[0m
+[0;32mI (152609) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (152629) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (152629) SENSOR: Loi doc DHT22[0m
+[0;32mI (154629) SENSOR: Anh sang: 31 lx[0m
+[1;31mE (154649) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (154649) SENSOR: Loi doc DHT22[0m
+[0;32mI (156649) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (156669) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (156669) SENSOR: Loi doc DHT22[0m
+[0;32mI (158669) SENSOR: Anh sang: 33 lx[0m
+[1;31mE (158689) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (158689) SENSOR: Loi doc DHT22[0m
+[0;32mI (160689) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (160709) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (160709) SENSOR: Loi doc DHT22[0m
+[0;32mI (162709) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (162729) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (162729) SENSOR: Loi doc DHT22[0m
+[0;32mI (164729) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (164749) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (164749) SENSOR: Loi doc DHT22[0m
+[0;32mI (166749) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (166769) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (166769) SENSOR: Loi doc DHT22[0m
+[0;32mI (168769) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (168789) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (168789) SENSOR: Loi doc DHT22[0m
+[0;32mI (170789) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (170809) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (170809) SENSOR: Loi doc DHT22[0m
+[0;32mI (172809) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (172829) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (172829) SENSOR: Loi doc DHT22[0m
+[0;32mI (174829) SENSOR: Anh sang: 34 lx[0m
+[1;31mE (174849) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (174849) SENSOR: Loi doc DHT22[0m
+[0;32mI (176849) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (176869) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (176869) SENSOR: Loi doc DHT22[0m
+[0;32mI (178869) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (178889) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (178889) SENSOR: Loi doc DHT22[0m
+[0;32mI (180889) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (180909) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (180909) SENSOR: Loi doc DHT22[0m
+[0;32mI (182909) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (182929) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (182929) SENSOR: Loi doc DHT22[0m
+[0;32mI (184929) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (184949) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (184949) SENSOR: Loi doc DHT22[0m
+[0;32mI (186949) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (186969) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (186969) SENSOR: Loi doc DHT22[0m
+[0;32mI (188969) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (188989) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (188989) SENSOR: Loi doc DHT22[0m
+[0;32mI (190989) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (191009) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (191009) SENSOR: Loi doc DHT22[0m
+[0;32mI (193009) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (193029) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (193029) SENSOR: Loi doc DHT22[0m
+[0;32mI (195029) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (195049) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (195049) SENSOR: Loi doc DHT22[0m
+[0;32mI (197049) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (197069) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (197069) SENSOR: Loi doc DHT22[0m
+[0;32mI (199069) SENSOR: Anh sang: 36 lx[0m
+[1;31mE (199089) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (199089) SENSOR: Loi doc DHT22[0m
+[0;32mI (201089) SENSOR: Anh sang: 35 lx[0m
+[1;31mE (201109) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (201109) SENSOR: Loi doc DHT22[0m
+[0;32mI (203109) SENSOR: Anh sang: 33 lx[0m
+[1;31mE (203129) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (203129) SENSOR: Loi doc DHT22[0m
+[0;32mI (205129) SENSOR: Anh sang: 31 lx[0m
+[1;31mE (205149) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (205149) SENSOR: Loi doc DHT22[0m
+[0;32mI (207149) SENSOR: Anh sang: 11 lx[0m
+[1;31mE (207169) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (207169) SENSOR: Loi doc DHT22[0m
+[0;32mI (209169) SENSOR: Anh sang: 21 lx[0m
+[1;31mE (209189) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (209189) SENSOR: Loi doc DHT22[0m
+[0;32mI (211189) SENSOR: Anh sang: 39 lx[0m
+[1;31mE (211209) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (211209) SENSOR: Loi doc DHT22[0m
+[0;32mI (213209) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (213229) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (213229) SENSOR: Loi doc DHT22[0m
+[0;32mI (215229) SENSOR: Anh sang: 16 lx[0m
+[1;31mE (215249) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (215249) SENSOR: Loi doc DHT22[0m
+[0;32mI (217249) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (217269) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (217269) SENSOR: Loi doc DHT22[0m
+[0;32mI (219269) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (219289) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (219289) SENSOR: Loi doc DHT22[0m
+[0;32mI (221289) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (221309) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (221309) SENSOR: Loi doc DHT22[0m
+[0;32mI (223309) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (223329) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (223329) SENSOR: Loi doc DHT22[0m
+[0;32mI (225329) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (225349) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (225349) SENSOR: Loi doc DHT22[0m
+[0;32mI (227349) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (227369) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (227369) SENSOR: Loi doc DHT22[0m
+[0;32mI (229369) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (229389) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (229389) SENSOR: Loi doc DHT22[0m
+[0;32mI (231389) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (231409) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (231409) SENSOR: Loi doc DHT22[0m
+[0;32mI (233409) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (233429) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (233429) SENSOR: Loi doc DHT22[0m
+[0;32mI (235429) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (235449) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (235449) SENSOR: Loi doc DHT22[0m
+[0;32mI (237449) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (237469) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (237469) SENSOR: Loi doc DHT22[0m
+[0;32mI (239469) SENSOR: Anh sang: 14 lx[0m
+[1;31mE (239489) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (239489) SENSOR: Loi doc DHT22[0m
+[0;32mI (241489) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (241509) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (241509) SENSOR: Loi doc DHT22[0m
+[0;32mI (243509) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (243529) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (243529) SENSOR: Loi doc DHT22[0m
+[0;32mI (245529) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (245549) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (245549) SENSOR: Loi doc DHT22[0m
+[0;32mI (247549) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (247569) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (247569) SENSOR: Loi doc DHT22[0m
+[0;32mI (249569) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (249589) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (249589) SENSOR: Loi doc DHT22[0m
+[0;32mI (251589) SENSOR: Anh sang: 19 lx[0m
+[1;31mE (251609) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (251609) SENSOR: Loi doc DHT22[0m
+[0;32mI (253609) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (253629) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (253629) SENSOR: Loi doc DHT22[0m
+[0;32mI (255629) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (255649) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (255649) SENSOR: Loi doc DHT22[0m
+[0;32mI (257649) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (257669) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (257669) SENSOR: Loi doc DHT22[0m
+[0;32mI (259669) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (259689) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (259689) SENSOR: Loi doc DHT22[0m
+[0;32mI (261689) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (261709) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (261709) SENSOR: Loi doc DHT22[0m
+[0;32mI (263709) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (263729) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (263729) SENSOR: Loi doc DHT22[0m
+[0;32mI (265729) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (265749) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (265749) SENSOR: Loi doc DHT22[0m
+[0;32mI (267749) SENSOR: Anh sang: 15 lx[0m
+[1;31mE (267769) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (267769) SENSOR: Loi doc DHT22[0m
+[0;32mI (269769) SENSOR: Anh sang: 16 lx[0m
+[1;31mE (269789) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (269789) SENSOR: Loi doc DHT22[0m
+[0;32mI (271789) SENSOR: Anh sang: 15 lx[0m
+[1;31mE (271809) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (271809) SENSOR: Loi doc DHT22[0m
+[0;32mI (273809) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (273829) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (273829) SENSOR: Loi doc DHT22[0m
+[0;32mI (275829) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (275849) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (275849) SENSOR: Loi doc DHT22[0m
+[0;32mI (277849) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (277869) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (277869) SENSOR: Loi doc DHT22[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 25 2026 01:51:29[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c710h ( 50960) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c738 vaddr=3fc93200 size=02d24h ( 11556) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f464 vaddr=40374000 size=00bb4h (  2996) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1cbcch (117708) map[0m
+[0;32mI (132) esp_image: segment 4: paddr=0003cbf4 vaddr=40374bb4 size=0e54ch ( 58700) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004b148 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (163) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (163) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (165) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (169) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (173) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (177) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (182) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (187) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (192) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (197) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (201) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (205) esp_psram: Speed: 40MHz[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (942) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (951) cpu_start: Pro cpu start user code[0m
+[0;32mI (951) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (951) app_init: Application information:[0m
+[0;32mI (951) app_init: Project name:     do_an_thiet_ke_he_thong_nhung[0m
+[0;32mI (957) app_init: App version:      v5.4[0m
+[0;32mI (960) app_init: Compile time:     Oct 18 2026 07:42:22[0m
+[0;32mI (965) app_init: ELF file SHA256:  59fbd32cb...[0m
+[0;32mI (970) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (973) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (977) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (981) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (985) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (991) heap_init: At 3FC968C0 len 00052E50 (331 KiB): RAM[0m
+[0;32mI (996) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1001) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1007) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (1012) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1020) spi_flash: detected chip: mxic[0m
+[0;32mI (1022) spi_flash: flash io: dio[0m
+[0;32mI (1025) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1032) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1039) main_task: Started on CPU0[0m
+[0;32mI (1069) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1069) main_task: Calling app_main()[0m
+[0;32mI (1069) i2cdev: [Port 0] First initialization. Configuring bus with SDA=8, SCL=9 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (1079) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1099) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3c0309a0).[0m
+[0;32mI (1099) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3c030dc4, Speed: 400000 Hz).[0m
+[0;32mI (1109) SENSOR: Anh sang: 18 lx[0m
+[1;31mE (1129) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (1129) SENSOR: Loi doc DHT22[0m
+[0;32mI (3139) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (3159) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (3159) SENSOR: Loi doc DHT22[0m
+[0;32mI (5159) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (5179) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (5179) SENSOR: Loi doc DHT22[0m
+[0;32mI (7179) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (7199) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (7199) SENSOR: Loi doc DHT22[0m
+[0;32mI (9199) SENSOR: Anh sang: 21 lx[0m
+[1;31mE (9219) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (9219) SENSOR: Loi doc DHT22[0m
+[0;32mI (11219) SENSOR: Anh sang: 10 lx[0m
+[1;31mE (11239) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (11239) SENSOR: Loi doc DHT22[0m
+[0;32mI (13239) SENSOR: Anh sang: 23 lx[0m
+[1;31mE (13259) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (13259) SENSOR: Loi doc DHT22[0m
+[0;32mI (15259) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (15279) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (15279) SENSOR: Loi doc DHT22[0m
+[0;32mI (17279) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (17299) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (17299) SENSOR: Loi doc DHT22[0m
+[0;32mI (19299) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (19319) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (19319) SENSOR: Loi doc DHT22[0m
+[0;32mI (21319) SENSOR: Anh sang: 20 lx[0m
+[1;31mE (21339) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (21339) SENSOR: Loi doc DHT22[0m
+[0;32mI (23339) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (23359) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (23359) SENSOR: Loi doc DHT22[0m
+[0;32mI (25359) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (25379) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (25379) SENSOR: Loi doc DHT22[0m
+[0;32mI (27379) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (27399) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (27399) SENSOR: Loi doc DHT22[0m
+[0;32mI (29399) SENSOR: Anh sang: 22 lx[0m
+[1;31mE (29419) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (29419) SENSOR: Loi doc DHT22[0m
+[0;32mI (31419) SENSOR: Anh sang: 15 lx[0m
+[1;31mE (31439) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (31439) SENSOR: Loi doc DHT22[0m
+[0;32mI (33439) SENSOR: Anh sang: 16 lx[0m
+[1;31mE (33459) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (33459) SENSOR: Loi doc DHT22[0m
+[0;32mI (35459) SENSOR: Anh sang: 16 lx[0m
+[1;31mE (35479) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (35479) SENSOR: Loi doc DHT22[0m
+[0;32mI (37479) SENSOR: Anh sang: 15 lx[0m
+[1;31mE (37499) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (37499) SENSOR: Loi doc DHT22[0m
+[0;32mI (39499) SENSOR: Anh sang: 16 lx[0m
+[1;31mE (39519) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (39519) SENSOR: Loi doc DHT22[0m
+[0;32mI (41519) SENSOR: Anh sang: 16 lx[0m
+[1;31mE (41539) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (41539) SENSOR: Loi doc DHT22[0m
+[0;32mI (43539) SENSOR: Anh sang: 15 lx[0m
+[1;31mE (43559) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (43559) SENSOR: Loi doc DHT22[0m
+[0;32mI (45559) SENSOR: Anh sang: 14 lx[0m
+[1;31mE (45579) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (45579) SENSOR: Loi doc DHT22[0m
+[0;32mI (47579) SENSOR: Anh sang: 7 lx[0m
+[1;31mE (47599) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (47599) SENSOR: Loi doc DHT22[0m
+[0;32mI (49599) SENSOR: Anh sang: 15 lx[0m
+[1;31mE (49619) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (49619) SENSOR: Loi doc DHT22[0m
+[0;32mI (51619) SENSOR: Anh sang: 17 lx[0m
+[1;31mE (51639) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (51639) SENSOR: Loi doc DHT22[0m
+[0;32mI (53639) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (53659) SENSOR: Nhiet do: 30.5 C, Do am: 59.3 %[0m
+[0;32mI (55659) SENSOR: Anh sang: 14 lx[0m
+[0;32mI (55679) SENSOR: Nhiet do: 30.5 C, Do am: 59.5 %[0m
+[0;32mI (57679) SENSOR: Anh sang: 20 lx[0m
+[0;32mI (57699) SENSOR: Nhiet do: 30.5 C, Do am: 59.7 %[0m
+[0;32mI (59699) SENSOR: Anh sang: 20 lx[0m
+[0;32mI (59719) SENSOR: Nhiet do: 30.5 C, Do am: 59.4 %[0m
+[0;32mI (61719) SENSOR: Anh sang: 25 lx[0m
+[0;32mI (61739) SENSOR: Nhiet do: 30.5 C, Do am: 59.1 %[0m
+[0;32mI (63739) SENSOR: Anh sang: 26 lx[0m
+[0;32mI (63759) SENSOR: Nhiet do: 30.5 C, Do am: 58.9 %[0m
+[0;32mI (65759) SENSOR: Anh sang: 27 lx[0m
+[0;32mI (65779) SENSOR: Nhiet do: 30.5 C, Do am: 58.8 %[0m
+[0;32mI (67779) SENSOR: Anh sang: 27 lx[0m
+[0;32mI (67799) SENSOR: Nhiet do: 30.5 C, Do am: 58.3 %[0m
+[0;32mI (69799) SENSOR: Anh sang: 28 lx[0m
+[0;32mI (69819) SENSOR: Nhiet do: 30.5 C, Do am: 57.8 %[0m
+[0;32mI (71819) SENSOR: Anh sang: 27 lx[0m
+[0;32mI (71839) SENSOR: Nhiet do: 30.5 C, Do am: 57.4 %[0m
+[0;32mI (73839) SENSOR: Anh sang: 27 lx[0m
+[0;32mI (73859) SENSOR: Nhiet do: 30.5 C, Do am: 57.3 %[0m
+[0;32mI (75859) SENSOR: Anh sang: 28 lx[0m
+[0;32mI (75879) SENSOR: Nhiet do: 30.4 C, Do am: 56.9 %[0m
+[0;32mI (77879) SENSOR: Anh sang: 28 lx[0m
+[0;32mI (77899) SENSOR: Nhiet do: 30.4 C, Do am: 56.6 %[0m
+[0;32mI (79899) SENSOR: Anh sang: 27 lx[0m
+[0;32mI (79919) SENSOR: Nhiet do: 30.4 C, Do am: 56.4 %[0m

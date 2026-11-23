@@ -1,0 +1,130 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 29 2026 10:08:22[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ccc4h ( 52420) map[0m
+[0;32mI (98) esp_image: segment 1: paddr=0001ccec vaddr=3fc92800 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f7d4 vaddr=40374000 size=00844h (  2116) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1e334h (123700) map[0m
+[0;32mI (133) esp_image: segment 4: paddr=0003e35c vaddr=40374844 size=0deech ( 57068) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004c250 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     do_an_thiet_ke_he_thong_nhung[0m
+[0;32mI (178) app_init: App version:      v5.4[0m
+[0;32mI (182) app_init: Compile time:     Oct 29 2026 10:08:32[0m
+[0;32mI (187) app_init: ELF file SHA256:  edbb88e5d...[0m
+[0;32mI (191) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (195) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (199) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (203) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (213) heap_init: At 3FC95CB8 len 00053A58 (334 KiB): RAM[0m
+[0;32mI (218) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (223) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (235) spi_flash: detected chip: mxic[0m
+[0;32mI (237) spi_flash: flash io: dio[0m
+[0;33mW (240) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (253) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (259) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (285) main_task: Calling app_main()[0m
+[0;32mI (285) i2cdev: [Port 0] First initialization. Configuring bus with SDA=8, SCL=9 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (285) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (305) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3fc999e4).[0m
+[0;32mI (305) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3fc99e9c, Speed: 400000 Hz).[0m
+[0;32mI (315) SENSOR: Anh sang: 17 lx[0m
+[0;32mI (345) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (345) SENSOR: Do am dat: 0.0 % (ADC raw = 3334)[0m
+[0;32mI (2345) SENSOR: Anh sang: 16 lx[0m
+[0;32mI (2365) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (2365) SENSOR: Do am dat: 0.0 % (ADC raw = 3325)[0m
+[0;32mI (4365) SENSOR: Anh sang: 15 lx[0m
+[0;32mI (4385) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (4385) SENSOR: Do am dat: 0.0 % (ADC raw = 3332)[0m
+[0;32mI (6385) SENSOR: Anh sang: 16 lx[0m
+[0;32mI (6405) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.3 %[0m
+[0;32mI (6405) SENSOR: Do am dat: 0.0 % (ADC raw = 3326)[0m
+[0;32mI (8405) SENSOR: Anh sang: 18 lx[0m
+[0;32mI (8425) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.3 %[0m
+[0;32mI (8425) SENSOR: Do am dat: 0.0 % (ADC raw = 3369)[0m
+[0;32mI (10425) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (10445) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (10445) SENSOR: Do am dat: 0.0 % (ADC raw = 3341)[0m
+[0;32mI (12445) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (12465) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (12465) SENSOR: Do am dat: 78.4 % (ADC raw = 1868)[0m
+[0;32mI (14465) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (14485) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (14485) SENSOR: Do am dat: 83.8 % (ADC raw = 1776)[0m
+[0;32mI (16485) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (16505) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.4 %[0m
+[0;32mI (16505) SENSOR: Do am dat: 64.2 % (ADC raw = 2108)[0m
+[0;32mI (18505) SENSOR: Anh sang: 18 lx[0m
+[0;32mI (18525) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.5 %[0m
+[0;32mI (18525) SENSOR: Do am dat: 0.0 % (ADC raw = 3549)[0m
+[0;32mI (20525) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (20545) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.5 %[0m
+[0;32mI (20545) SENSOR: Do am dat: 89.5 % (ADC raw = 1679)[0m
+[0;32mI (22545) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (22565) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.5 %[0m
+[0;32mI (22565) SENSOR: Do am dat: 87.7 % (ADC raw = 1709)[0m
+[0;32mI (24565) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (24585) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.5 %[0m
+[0;32mI (24585) SENSOR: Do am dat: 0.0 % (ADC raw = 3553)[0m
+[0;32mI (26585) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (26605) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.5 %[0m
+[0;32mI (26605) SENSOR: Do am dat: 0.0 % (ADC raw = 3514)[0m
+[0;32mI (28605) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (28625) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.6 %[0m
+[0;32mI (28625) SENSOR: Do am dat: 38.6 % (ADC raw = 2543)[0m
+[0;32mI (30625) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (30645) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.7 %[0m
+[0;32mI (30645) SENSOR: Do am dat: 0.0 % (ADC raw = 3409)[0m
+[0;32mI (32645) SENSOR: Anh sang: 15 lx[0m
+[0;32mI (32665) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.7 %[0m
+[0;32mI (32665) SENSOR: Do am dat: 0.0 % (ADC raw = 3555)[0m
+[0;32mI (34665) SENSOR: Anh sang: 19 lx[0m
+[0;32mI (34685) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.7 %[0m
+[0;32mI (34685) SENSOR: Do am dat: 0.0 % (ADC raw = 3551)[0m
+[0;32mI (36685) SENSOR: Anh sang: 20 lx[0m
+[0;32mI (36705) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.7 %[0m
+[0;32mI (36705) SENSOR: Do am dat: 0.0 % (ADC raw = 3549)[0m
+[0;32mI (38705) SENSOR: Anh sang: 20 lx[0m
+[0;32mI (38725) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.6 %[0m
+[0;32mI (38725) SENSOR: Do am dat: 0.0 % (ADC raw = 3550)[0m
+[0;32mI (40725) SENSOR: Anh sang: 20 lx[0m
+[0;32mI (40745) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.7 %[0m
+[0;32mI (40745) SENSOR: Do am dat: 0.0 % (ADC raw = 3549)[0m
+[0;32mI (42745) SENSOR: Anh sang: 15 lx[0m
+[0;32mI (42765) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.6 %[0m
+[0;32mI (42765) SENSOR: Do am dat: 0.0 % (ADC raw = 3554)[0m
+[0;32mI (44765) SENSOR: Anh sang: 15 lx[0m
+[0;32mI (44785) SENSOR: Nhiet do: 31.7 C, Do am KK: 71.6 %[0m
+[0;32mI (44785) SENSOR: Do am dat: 0.0 % (ADC raw = 3553)[0m

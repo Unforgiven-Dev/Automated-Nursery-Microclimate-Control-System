@@ -1,0 +1,1437 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 29 2026 10:08:22[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d50ch ( 54540) map[0m
+[0;32mI (98) esp_image: segment 1: paddr=0001d534 vaddr=3fc92800 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0002001c vaddr=40374000 size=0e730h ( 59184) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=0002e754 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (116) esp_image: segment 4: paddr=0002e778 vaddr=00000000 size=018a0h (  6304) [0m
+[0;32mI (121) esp_image: segment 5: paddr=00030020 vaddr=42000020 size=2263ch (140860) map[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (177) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     do_an_thiet_ke_he_thong_nhung[0m
+[0;32mI (183) app_init: App version:      v5.4[0m
+[0;32mI (186) app_init: Compile time:     Oct 29 2026 10:08:32[0m
+[0;32mI (191) app_init: ELF file SHA256:  ebd0dc409...[0m
+[0;32mI (196) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (199) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (203) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (211) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (217) heap_init: At 3FC960B0 len 00053660 (333 KiB): RAM[0m
+[0;32mI (223) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (228) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (239) spi_flash: detected chip: mxic[0m
+[0;32mI (242) spi_flash: flash io: dio[0m
+[0;33mW (245) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (257) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (263) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (270) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) VUON_UOM: Khoi dong he thong kiem soat moi truong vuon uom[0m
+[0;32mI (290) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[6]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (310) i2cdev: [Port 0] First initialization. Configuring bus with SDA=8, SCL=9 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (310) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (330) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3fc99ddc).[0m
+[0;32mI (340) i2cdev: [0x3c at 0] Device added successfully (Device Handle: 0x3fc9a294, Speed: 400000 Hz).[0m
+[0;32mI (400) i2cdev: [0x23 at 0] Device added successfully (Device Handle: 0x3fc9a330, Speed: 400000 Hz).[0m
+[0;32mI (430) VUON_UOM: Nhiet do: 31.9 C | Do am KK: 64.5 %[0m
+[0;32mI (430) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (430) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (430) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (430) VUON_UOM: >>> QUAT BAT[0m
+[0;32mI (2480) VUON_UOM: Nhiet do: 31.9 C | Do am KK: 64.5 %[0m
+[0;32mI (2480) VUON_UOM: Anh sang: 32 lx[0m
+[0;32mI (2480) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3189)[0m
+[0;32mI (4530) VUON_UOM: Nhiet do: 31.9 C | Do am KK: 64.4 %[0m
+[0;32mI (4530) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (4530) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (5460) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (6600) VUON_UOM: Nhiet do: 31.9 C | Do am KK: 64.4 %[0m
+[0;32mI (6600) VUON_UOM: Anh sang: 32 lx[0m
+[0;32mI (6600) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3189)[0m
+[0;32mI (8650) VUON_UOM: Nhiet do: 31.9 C | Do am KK: 64.3 %[0m
+[0;32mI (8650) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (8650) VUON_UOM: Do am dat: 0.8 % (ADC raw = 3187)[0m
+[0;32mI (10700) VUON_UOM: Nhiet do: 31.9 C | Do am KK: 64.2 %[0m
+[0;32mI (10700) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (10700) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (12750) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 64.2 %[0m
+[0;32mI (12750) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (12750) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3189)[0m
+[0;32mI (14800) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 64.2 %[0m
+[0;32mI (14800) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (14800) VUON_UOM: Do am dat: 0.7 % (ADC raw = 3188)[0m
+[0;32mI (16850) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 64.1 %[0m
+[0;32mI (16850) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (16850) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (18900) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 64.1 %[0m
+[0;32mI (18900) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (18900) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (20950) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 64.0 %[0m
+[0;32mI (20950) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (20950) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (23000) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 64.0 %[0m
+[0;32mI (23000) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (23000) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (25050) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 63.9 %[0m
+[0;32mI (25050) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (25050) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (27100) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 63.9 %[0m
+[0;32mI (27100) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (27100) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (29150) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 63.9 %[0m
+[0;32mI (29150) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (29150) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (31200) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 63.8 %[0m
+[0;32mI (31200) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (31200) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (33250) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 63.8 %[0m
+[0;32mI (33250) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (33250) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (35300) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (35300) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (35300) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (35530) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (37370) VUON_UOM: Nhiet do: 32.0 C | Do am KK: 63.8 %[0m
+[0;32mI (37370) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (37370) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (39420) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (39420) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (39420) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (40550) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (41490) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (41490) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (41490) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (43540) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (43540) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (43540) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (45590) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (45590) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (45590) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (47640) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (47640) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (47640) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (49690) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (49690) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (49690) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3189)[0m
+[0;32mI (51740) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (51740) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (51740) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3189)[0m
+[0;32mI (53790) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (53790) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (53790) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (55840) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (55840) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (55840) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (57890) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (57890) VUON_UOM: Anh sang: 32 lx[0m
+[0;32mI (57890) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (59940) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (59940) VUON_UOM: Anh sang: 32 lx[0m
+[0;32mI (59940) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (61990) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (61990) VUON_UOM: Anh sang: 32 lx[0m
+[0;32mI (61990) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (64040) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (64040) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (64040) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (66090) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (66090) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (66090) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (68140) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (68140) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (68140) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (70190) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (70190) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (70190) VUON_UOM: Do am dat: 0.7 % (ADC raw = 3188)[0m
+[0;32mI (70620) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (72260) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (72260) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (72260) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (74310) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (74310) VUON_UOM: Anh sang: 28 lx[0m
+[0;32mI (74310) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (75640) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (76380) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (76380) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (76380) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (78430) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (78430) VUON_UOM: Anh sang: 36 lx[0m
+[0;32mI (78430) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (80480) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (80480) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (80480) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (82530) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.5 %[0m
+[0;32mI (82530) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (82530) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3639)[0m
+[0;32mI (84580) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (84580) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (84580) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3635)[0m
+[0;32mI (86630) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (86630) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (86630) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3632)[0m
+[0;32mI (88680) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.5 %[0m
+[0;32mI (88680) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (88680) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3626)[0m
+[0;32mI (90730) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (90730) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (90730) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3641)[0m
+[0;32mI (92780) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (92780) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (92780) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3883)[0m
+[0;32mI (94830) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (94830) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (94830) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3853)[0m
+[0;32mI (96880) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (96880) VUON_UOM: Anh sang: 36 lx[0m
+[0;32mI (96880) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3889)[0m
+[0;32mI (98930) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (98930) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (98930) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3881)[0m
+[0;32mI (100980) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (100980) VUON_UOM: Anh sang: 36 lx[0m
+[0;32mI (100980) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3863)[0m
+[0;32mI (103030) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (103030) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (103030) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3869)[0m
+[0;32mI (105080) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (105080) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (105080) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3859)[0m
+[0;32mI (105710) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (107150) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (107150) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (107150) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3881)[0m
+[0;32mI (109200) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (109200) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (109200) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3889)[0m
+[0;32mI (110730) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (111270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (111270) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (111270) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3889)[0m
+[0;32mI (113320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (113320) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (113320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3880)[0m
+[0;32mI (115370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (115370) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (115370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3885)[0m
+[0;32mI (117420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (117420) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (117420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3878)[0m
+[0;32mI (119470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (119470) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (119470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3877)[0m
+[0;32mI (121520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (121520) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (121520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3874)[0m
+[0;32mI (123570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (123570) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (123570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3872)[0m
+[0;32mI (125620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (125620) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (125620) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3873)[0m
+[0;32mI (127670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (127670) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (127670) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3868)[0m
+[0;32mI (129720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (129720) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (129720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3880)[0m
+[0;32mI (131770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (131770) VUON_UOM: Anh sang: 59 lx[0m
+[0;32mI (131770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3868)[0m
+[0;32mI (133820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (133820) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (133820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3863)[0m
+[0;32mI (135870) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.5 %[0m
+[0;32mI (135870) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (135870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3880)[0m
+[0;32mI (137920) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.5 %[0m
+[0;32mI (137920) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (137920) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (139970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (139970) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (139970) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (140800) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (142040) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (142040) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (142040) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (144090) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (144090) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (144090) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (145820) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (146160) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (146160) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (146160) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (148210) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (148210) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (148210) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (150260) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (150260) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (150260) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (152310) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (152310) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (152310) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (154360) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (154360) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (154360) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (156410) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (156410) VUON_UOM: Anh sang: 71 lx[0m
+[0;32mI (156410) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (158460) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (158460) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (158460) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (160510) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (160510) VUON_UOM: Anh sang: 53 lx[0m
+[0;32mI (160510) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (162560) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (162560) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (162560) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (164610) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (164610) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (164610) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (166660) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (166660) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (166660) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (168710) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (168710) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (168710) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (170760) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (170760) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (170760) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (172810) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (172810) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (172810) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (174860) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (174860) VUON_UOM: Anh sang: 32 lx[0m
+[0;32mI (174860) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (175890) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (176930) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (176930) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (176930) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (178980) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (178980) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (178980) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (180910) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (181050) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (181050) VUON_UOM: Anh sang: 26 lx[0m
+[0;32mI (181050) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (183100) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (183100) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (183100) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (185150) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (185150) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (185150) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (187200) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (187200) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (187200) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (189250) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (189250) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (189250) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (191300) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (191300) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (191300) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (193350) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (193350) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (193350) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (195400) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (195400) VUON_UOM: Anh sang: 24 lx[0m
+[0;32mI (195400) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (197450) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (197450) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (197450) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (199500) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (199500) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (199500) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (201550) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (201550) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (201550) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (203600) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (203600) VUON_UOM: Anh sang: 22 lx[0m
+[0;32mI (203600) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (205650) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (205650) VUON_UOM: Anh sang: 22 lx[0m
+[0;32mI (205650) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (207700) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (207700) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (207700) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (209750) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (209750) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (209750) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;33mW (210980) VUON_UOM: Bom bi KHOA 600 giay: da bom 6 xung ma dat van kho (het nuoc? cam bien hong?)[0m
+[0;32mI (211820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (211820) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (211820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (213870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (213870) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (213870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (215920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (215920) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (215920) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (217970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (217970) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (217970) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (220020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (220020) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (220020) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (222070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (222070) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (222070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (224120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (224120) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (224120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (226170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (226170) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (226170) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (228220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (228220) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (228220) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (230270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (230270) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (230270) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (232320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (232320) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (232320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (234370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (234370) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (234370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (236420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (236420) VUON_UOM: Anh sang: 21 lx[0m
+[0;32mI (236420) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (238470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (238470) VUON_UOM: Anh sang: 24 lx[0m
+[0;32mI (238470) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (240520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (240520) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (240520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (242570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (242570) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (242570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (244620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (244620) VUON_UOM: Anh sang: 22 lx[0m
+[0;32mI (244620) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (246670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (246670) VUON_UOM: Anh sang: 24 lx[0m
+[0;32mI (246670) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (248720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (248720) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (248720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (250770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (250770) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (250770) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (252820) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (252820) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (252820) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (254870) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (254870) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (254870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (256920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (256920) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (256920) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (258970) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (258970) VUON_UOM: Anh sang: 27 lx[0m
+[0;32mI (258970) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (261020) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (261020) VUON_UOM: Anh sang: 27 lx[0m
+[0;32mI (261020) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (263070) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (263070) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (263070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (265120) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (265120) VUON_UOM: Anh sang: 26 lx[0m
+[0;32mI (265120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (267170) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (267170) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (267170) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (269220) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.6 %[0m
+[0;32mI (269220) VUON_UOM: Anh sang: 21 lx[0m
+[0;32mI (269220) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (271270) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (271270) VUON_UOM: Anh sang: 22 lx[0m
+[0;32mI (271270) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (273320) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (273320) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (273320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3208)[0m
+[0;32mI (275370) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (275370) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (275370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (277420) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (277420) VUON_UOM: Anh sang: 24 lx[0m
+[0;32mI (277420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (279470) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (279470) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (279470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (281520) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (281520) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (281520) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (283570) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (283570) VUON_UOM: Anh sang: 23 lx[0m
+[0;32mI (283570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (285620) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (285620) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (285620) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (287670) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (287670) VUON_UOM: Anh sang: 34 lx[0m
+[0;32mI (287670) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (289720) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (289720) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (289720) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (291770) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (291770) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (291770) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (293820) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (293820) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (293820) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (295870) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (295870) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (295870) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (297920) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (297920) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (297920) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (299970) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (299970) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (299970) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (302020) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.7 %[0m
+[0;32mI (302020) VUON_UOM: Anh sang: 38 lx[0m
+[0;32mI (302020) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (304070) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (304070) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (304070) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (306120) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (306120) VUON_UOM: Anh sang: 38 lx[0m
+[0;32mI (306120) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (308170) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (308170) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (308170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (310220) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (310220) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (310220) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (312270) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (312270) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (312270) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (314320) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (314320) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (314320) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (316370) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (316370) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (316370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (318420) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (318420) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (318420) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (320470) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (320470) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (320470) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (322520) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (322520) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (322520) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (324570) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (324570) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (324570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (326620) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (326620) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (326620) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (328670) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (328670) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (328670) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (330720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (330720) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (330720) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (332770) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.8 %[0m
+[0;32mI (332770) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (332770) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (334820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (334820) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (334820) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (336870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (336870) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (336870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (338920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (338920) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (338920) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (340970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (340970) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (340970) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (343020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (343020) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (343020) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (345070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (345070) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (345070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (347120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (347120) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (347120) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (349170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.8 %[0m
+[0;32mI (349170) VUON_UOM: Anh sang: 48 lx[0m
+[0;32mI (349170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (351220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (351220) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (351220) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (353270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (353270) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (353270) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (355320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (355320) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (355320) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (357370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (357370) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (357370) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (359420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (359420) VUON_UOM: Anh sang: 48 lx[0m
+[0;32mI (359420) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (361470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (361470) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (361470) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (363520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (363520) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (363520) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (365570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (365570) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (365570) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (367620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (367620) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (367620) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (369670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (369670) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (369670) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (371720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.7 %[0m
+[0;32mI (371720) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (371720) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (373770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (373770) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (373770) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (375820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (375820) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (375820) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (377870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (377870) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (377870) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (379920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (379920) VUON_UOM: Anh sang: 36 lx[0m
+[0;32mI (379920) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (381970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (381970) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (381970) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (384020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (384020) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (384020) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (386070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (386070) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (386070) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (388120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (388120) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (388120) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (390170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (390170) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (390170) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (392220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (392220) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (392220) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (394270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (394270) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (394270) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (396320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (396320) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (396320) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (398370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (398370) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (398370) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (400420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (400420) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (400420) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (402470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (402470) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (402470) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (404520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (404520) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (404520) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (406570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (406570) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (406570) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (408620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (408620) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (408620) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (410670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (410670) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (410670) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (412720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (412720) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (412720) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (414770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (414770) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (414770) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (416820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (416820) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (416820) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (418870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (418870) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (418870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (420920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (420920) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (420920) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (422970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (422970) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (422970) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (425020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (425020) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (425020) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (427070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (427070) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (427070) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (429120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (429120) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (429120) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (431170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (431170) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (431170) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (433220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (433220) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (433220) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (435270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (435270) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (435270) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3649)[0m
+[0;32mI (437320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (437320) VUON_UOM: Anh sang: 27 lx[0m
+[0;32mI (437320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3657)[0m
+[0;32mI (439370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (439370) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (439370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3646)[0m
+[0;32mI (441420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (441420) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (441420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3641)[0m
+[0;32mI (443470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (443470) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (443470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3884)[0m
+[0;32mI (445520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (445520) VUON_UOM: Anh sang: 27 lx[0m
+[0;32mI (445520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3879)[0m
+[0;32mI (447570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (447570) VUON_UOM: Anh sang: 28 lx[0m
+[0;32mI (447570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3868)[0m
+[0;32mI (449620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (449620) VUON_UOM: Anh sang: 27 lx[0m
+[0;32mI (449620) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3878)[0m
+[0;32mI (451670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.6 %[0m
+[0;32mI (451670) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (451670) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3883)[0m
+[0;32mI (453720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (453720) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (453720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3863)[0m
+[0;32mI (455770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (455770) VUON_UOM: Anh sang: 59 lx[0m
+[0;32mI (455770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3868)[0m
+[0;32mI (457820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.5 %[0m
+[0;32mI (457820) VUON_UOM: Anh sang: 61 lx[0m
+[0;32mI (457820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3887)[0m
+[0;32mI (459870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (459870) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (459870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3873)[0m
+[0;32mI (461920) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.4 %[0m
+[0;32mI (461920) VUON_UOM: Anh sang: 32 lx[0m
+[0;33mW (461920) VUON_UOM: Do am dat: loi doc (ADC raw = 4095)[0m
+[0;32mI (463970) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.4 %[0m
+[0;32mI (463970) VUON_UOM: Anh sang: 28 lx[0m
+[0;32mI (463970) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3803)[0m
+[0;32mI (466020) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.4 %[0m
+[0;32mI (466020) VUON_UOM: Anh sang: 31 lx[0m
+[0;33mW (466020) VUON_UOM: Do am dat: loi doc (ADC raw = 4093)[0m
+[0;32mI (468070) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (468070) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (468070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3871)[0m
+[0;32mI (470120) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (470120) VUON_UOM: Anh sang: 29 lx[0m
+[0;33mW (470120) VUON_UOM: Do am dat: loi doc (ADC raw = 4074)[0m
+[0;32mI (472170) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (472170) VUON_UOM: Anh sang: 29 lx[0m
+[0;32mI (472170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3849)[0m
+[0;32mI (474220) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.2 %[0m
+[0;32mI (474220) VUON_UOM: Anh sang: 36 lx[0m
+[0;32mI (474220) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3874)[0m
+[0;32mI (476270) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.2 %[0m
+[0;32mI (476270) VUON_UOM: Anh sang: 33 lx[0m
+[0;32mI (476270) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3869)[0m
+[0;32mI (478320) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.2 %[0m
+[0;32mI (478320) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (478320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3868)[0m
+[0;32mI (480370) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.2 %[0m
+[0;32mI (480370) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (480370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3864)[0m
+[0;32mI (482420) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (482420) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (482420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3823)[0m
+[0;32mI (484470) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (484470) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (484470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3857)[0m
+[0;32mI (486520) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (486520) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (486520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3861)[0m
+[0;32mI (488570) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (488570) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (488570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3849)[0m
+[0;32mI (490620) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (490620) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (490620) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3851)[0m
+[0;32mI (492670) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (492670) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (492670) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3864)[0m
+[0;32mI (494720) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (494720) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (494720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3872)[0m
+[0;32mI (496770) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (496770) VUON_UOM: Anh sang: 25 lx[0m
+[0;32mI (496770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3845)[0m
+[0;32mI (498820) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.1 %[0m
+[0;32mI (498820) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (498820) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (500870) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (500870) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (500870) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (502920) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (502920) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (502920) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (504970) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (504970) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (504970) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (507020) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (507020) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (507020) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (509070) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (509070) VUON_UOM: Anh sang: 44 lx[0m
+[0;32mI (509070) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (511120) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (511120) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (511120) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (513170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (513170) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (513170) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (515220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (515220) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (515220) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (517270) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (517270) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (517270) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (519320) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 62.9 %[0m
+[0;32mI (519320) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (519320) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (521370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (521370) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (521370) VUON_UOM: Do am dat: 100.0 % (ADC raw = 1435)[0m
+[0;32mI (523420) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (523420) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (523420) VUON_UOM: Do am dat: 100.0 % (ADC raw = 1431)[0m
+[0;32mI (525470) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (525470) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (525470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (527520) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (527520) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (527520) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (529570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (529570) VUON_UOM: Anh sang: 31 lx[0m
+[0;32mI (529570) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (531620) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (531620) VUON_UOM: Anh sang: 37 lx[0m
+[0;32mI (531620) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (533670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (533670) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (533670) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (535720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (535720) VUON_UOM: Anh sang: 57 lx[0m
+[0;32mI (535720) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (537770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (537770) VUON_UOM: Anh sang: 57 lx[0m
+[0;32mI (537770) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (539820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (539820) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (539820) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (541870) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.0 %[0m
+[0;32mI (541870) VUON_UOM: Anh sang: 59 lx[0m
+[0;32mI (541870) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (543920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (543920) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (543920) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (545970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (545970) VUON_UOM: Anh sang: 30 lx[0m
+[0;32mI (545970) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (548020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (548020) VUON_UOM: Anh sang: 55 lx[0m
+[0;32mI (548020) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (550070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (550070) VUON_UOM: Anh sang: 59 lx[0m
+[0;32mI (550070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (552120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (552120) VUON_UOM: Anh sang: 57 lx[0m
+[0;32mI (552120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3645)[0m
+[0;32mI (554170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (554170) VUON_UOM: Anh sang: 58 lx[0m
+[0;32mI (554170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3635)[0m
+[0;32mI (556220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (556220) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (556220) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3638)[0m
+[0;32mI (558270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (558270) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (558270) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3630)[0m
+[0;32mI (560320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (560320) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (560320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3607)[0m
+[0;32mI (562370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (562370) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (562370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3613)[0m
+[0;32mI (564420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (564420) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (564420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3626)[0m
+[0;32mI (566470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (566470) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (566470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3625)[0m
+[0;32mI (568520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (568520) VUON_UOM: Anh sang: 48 lx[0m
+[0;32mI (568520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3633)[0m
+[0;32mI (570570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (570570) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (570570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3619)[0m
+[0;32mI (572620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (572620) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (572620) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3619)[0m
+[0;32mI (574670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (574670) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (574670) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3636)[0m
+[0;32mI (576720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (576720) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (576720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3640)[0m
+[0;32mI (578770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (578770) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (578770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3636)[0m
+[0;32mI (580820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (580820) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (580820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3618)[0m
+[0;32mI (582870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (582870) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (582870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3603)[0m
+[0;32mI (584920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (584920) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (584920) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3627)[0m
+[0;32mI (586970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (586970) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (586970) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3602)[0m
+[0;32mI (589020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (589020) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (589020) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3649)[0m
+[0;32mI (591070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (591070) VUON_UOM: Anh sang: 41 lx[0m
+[0;32mI (591070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3634)[0m
+[0;32mI (593120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (593120) VUON_UOM: Anh sang: 36 lx[0m
+[0;32mI (593120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3639)[0m
+[0;32mI (595170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (595170) VUON_UOM: Anh sang: 26 lx[0m
+[0;32mI (595170) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (597220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (597220) VUON_UOM: Anh sang: 26 lx[0m
+[0;32mI (597220) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (599270) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (599270) VUON_UOM: Anh sang: 27 lx[0m
+[0;32mI (599270) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (601320) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (601320) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (601320) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (603370) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (603370) VUON_UOM: Anh sang: 48 lx[0m
+[0;32mI (603370) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (605420) VUON_UOM: Nhiet do: 32.3 C | Do am KK: 63.3 %[0m
+[0;32mI (605420) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (605420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (607470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (607470) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (607470) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (609520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (609520) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (609520) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (611570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (611570) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (611570) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (613620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (613620) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (613620) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (615670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (615670) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (615670) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (617720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (617720) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (617720) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (619770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (619770) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (619770) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (621820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (621820) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (621820) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (623870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (623870) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (623870) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (625920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (625920) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (625920) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (627970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (627970) VUON_UOM: Anh sang: 46 lx[0m
+[0;32mI (627970) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (630020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (630020) VUON_UOM: Anh sang: 45 lx[0m
+[0;32mI (630020) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (632070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (632070) VUON_UOM: Anh sang: 47 lx[0m
+[0;32mI (632070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (634120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (634120) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (634120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (636170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (636170) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (636170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (638220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (638220) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (638220) VUON_UOM: Do am dat: 23.5 % (ADC raw = 2801)[0m
+[0;32mI (640270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (640270) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (640270) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3191)[0m
+[0;32mI (642320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (642320) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (642320) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (644370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (644370) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (644370) VUON_UOM: Do am dat: 0.5 % (ADC raw = 3192)[0m
+[0;32mI (646420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (646420) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (646420) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (648470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (648470) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (648470) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3190)[0m
+[0;32mI (650520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (650520) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (650520) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3193)[0m
+[0;32mI (652570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (652570) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (652570) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (654620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (654620) VUON_UOM: Anh sang: 52 lx[0m
+[0;32mI (654620) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (656670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (656670) VUON_UOM: Anh sang: 53 lx[0m
+[0;32mI (656670) VUON_UOM: Do am dat: 0.6 % (ADC raw = 3189)[0m
+[0;32mI (658720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (658720) VUON_UOM: Anh sang: 35 lx[0m
+[0;32mI (658720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (660770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (660770) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (660770) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (662820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (662820) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (662820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (664870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (664870) VUON_UOM: Anh sang: 39 lx[0m
+[0;32mI (664870) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (666920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (666920) VUON_UOM: Anh sang: 42 lx[0m
+[0;32mI (666920) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (668970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (668970) VUON_UOM: Anh sang: 43 lx[0m
+[0;32mI (668970) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (671020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (671020) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (671020) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (673070) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.3 %[0m
+[0;32mI (673070) VUON_UOM: Anh sang: 49 lx[0m
+[0;32mI (673070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (675120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (675120) VUON_UOM: Anh sang: 48 lx[0m
+[0;32mI (675120) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (677170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (677170) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (677170) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (679220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (679220) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (679220) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (681270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (681270) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (681270) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (683320) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (683320) VUON_UOM: Anh sang: 52 lx[0m
+[0;32mI (683320) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (685370) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (685370) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (685370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (687420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (687420) VUON_UOM: Anh sang: 51 lx[0m
+[0;32mI (687420) VUON_UOM: Do am dat: 0.8 % (ADC raw = 3186)[0m
+[0;32mI (689470) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.4 %[0m
+[0;32mI (689470) VUON_UOM: Anh sang: 52 lx[0m
+[0;32mI (689470) VUON_UOM: Do am dat: 1.1 % (ADC raw = 3182)[0m
+[0;32mI (691520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (691520) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (691520) VUON_UOM: Do am dat: 3.4 % (ADC raw = 3143)[0m
+[0;32mI (693570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (693570) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (693570) VUON_UOM: Do am dat: 4.6 % (ADC raw = 3122)[0m
+[0;32mI (695620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (695620) VUON_UOM: Anh sang: 50 lx[0m
+[0;32mI (695620) VUON_UOM: Do am dat: 6.5 % (ADC raw = 3090)[0m
+[0;32mI (697670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (697670) VUON_UOM: Anh sang: 51 lx[0m
+[0;32mI (697670) VUON_UOM: Do am dat: 2.6 % (ADC raw = 3155)[0m
+[0;32mI (699720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (699720) VUON_UOM: Anh sang: 51 lx[0m
+[0;32mI (699720) VUON_UOM: Do am dat: 12.2 % (ADC raw = 2993)[0m
+[0;32mI (701770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.3 %[0m
+[0;32mI (701770) VUON_UOM: Anh sang: 52 lx[0m
+[0;32mI (701770) VUON_UOM: Do am dat: 18.4 % (ADC raw = 2888)[0m
+[0;32mI (703820) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (703820) VUON_UOM: Anh sang: 52 lx[0m
+[0;32mI (703820) VUON_UOM: Do am dat: 5.3 % (ADC raw = 3110)[0m
+[0;32mI (705870) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (705870) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (705870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (707920) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (707920) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (707920) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (709970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (709970) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (709970) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (712020) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (712020) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (712020) VUON_UOM: Do am dat: 0.4 % (ADC raw = 3194)[0m
+[0;32mI (714070) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.3 %[0m
+[0;32mI (714070) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (714070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (716120) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (716120) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (716120) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (718170) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (718170) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (718170) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (720220) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (720220) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (720220) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (722270) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.2 %[0m
+[0;32mI (722270) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (722270) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (724320) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (724320) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (724320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (726370) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (726370) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (726370) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (728420) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (728420) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (728420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (730470) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (730470) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (730470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (732520) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (732520) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (732520) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (734570) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (734570) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (734570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (736620) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (736620) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (736620) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (738670) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (738670) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (738670) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (740720) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (740720) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (740720) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (742770) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (742770) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (742770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (744820) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (744820) VUON_UOM: Anh sang: 61 lx[0m
+[0;32mI (744820) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (746870) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (746870) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (746870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (748920) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (748920) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (748920) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (750970) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (750970) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (750970) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (753020) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (753020) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (753020) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (755070) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (755070) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (755070) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (757120) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (757120) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (757120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (759170) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (759170) VUON_UOM: Anh sang: 78 lx[0m
+[0;32mI (759170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (761220) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (761220) VUON_UOM: Anh sang: 77 lx[0m
+[0;32mI (761220) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (763270) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (763270) VUON_UOM: Anh sang: 75 lx[0m
+[0;32mI (763270) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (765320) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (765320) VUON_UOM: Anh sang: 76 lx[0m
+[0;32mI (765320) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (767370) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (767370) VUON_UOM: Anh sang: 72 lx[0m
+[0;32mI (767370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (769420) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (769420) VUON_UOM: Anh sang: 75 lx[0m
+[0;32mI (769420) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (771470) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (771470) VUON_UOM: Anh sang: 76 lx[0m
+[0;32mI (771470) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (773520) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (773520) VUON_UOM: Anh sang: 75 lx[0m
+[0;32mI (773520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (775570) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (775570) VUON_UOM: Anh sang: 76 lx[0m
+[0;32mI (775570) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (777620) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (777620) VUON_UOM: Anh sang: 78 lx[0m
+[0;32mI (777620) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (779670) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.2 %[0m
+[0;32mI (779670) VUON_UOM: Anh sang: 76 lx[0m
+[0;32mI (779670) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (781720) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (781720) VUON_UOM: Anh sang: 75 lx[0m
+[0;32mI (781720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (783770) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (783770) VUON_UOM: Anh sang: 76 lx[0m
+[0;32mI (783770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (785820) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (785820) VUON_UOM: Anh sang: 78 lx[0m
+[0;32mI (785820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (787870) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (787870) VUON_UOM: Anh sang: 61 lx[0m
+[0;32mI (787870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (789920) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (789920) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (789920) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (791970) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.0 %[0m
+[0;32mI (791970) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (791970) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (794020) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (794020) VUON_UOM: Anh sang: 74 lx[0m
+[0;32mI (794020) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (796070) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (796070) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (796070) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (798120) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (798120) VUON_UOM: Anh sang: 67 lx[0m
+[0;32mI (798120) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (800170) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (800170) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (800170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (802220) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (802220) VUON_UOM: Anh sang: 75 lx[0m
+[0;32mI (802220) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (804270) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (804270) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (804270) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (806320) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (806320) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (806320) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (808370) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.1 %[0m
+[0;32mI (808370) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (808370) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (810420) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.1 %[0m
+[0;32mI (810420) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (810420) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (811170) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (812510) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 63.0 %[0m
+[0;32mI (812510) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (812510) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (814560) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (814560) VUON_UOM: Anh sang: 69 lx[0m
+[0;32mI (814560) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (816190) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (816630) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 63.0 %[0m
+[0;32mI (816630) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (816630) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (818680) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (818680) VUON_UOM: Anh sang: 72 lx[0m
+[0;32mI (818680) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (820730) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (820730) VUON_UOM: Anh sang: 72 lx[0m
+[0;32mI (820730) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (822780) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (822780) VUON_UOM: Anh sang: 72 lx[0m
+[0;32mI (822780) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (824830) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (824830) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (824830) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (826880) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.9 %[0m
+[0;32mI (826880) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (826880) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (828930) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.8 %[0m
+[0;32mI (828930) VUON_UOM: Anh sang: 69 lx[0m
+[0;32mI (828930) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (830980) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.8 %[0m
+[0;32mI (830980) VUON_UOM: Anh sang: 70 lx[0m
+[0;32mI (830980) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (833030) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.8 %[0m
+[0;32mI (833030) VUON_UOM: Anh sang: 67 lx[0m
+[0;32mI (833030) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (835080) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.8 %[0m
+[0;32mI (835080) VUON_UOM: Anh sang: 69 lx[0m
+[0;32mI (835080) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (837130) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.7 %[0m
+[0;32mI (837130) VUON_UOM: Anh sang: 67 lx[0m
+[0;32mI (837130) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (839180) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.7 %[0m
+[0;32mI (839180) VUON_UOM: Anh sang: 66 lx[0m
+[0;32mI (839180) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (841230) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.7 %[0m
+[0;32mI (841230) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (841230) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3199)[0m
+[0;32mI (843280) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 62.7 %[0m
+[0;32mI (843280) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (843280) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (845330) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.7 %[0m
+[0;32mI (845330) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (845330) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (846260) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (847400) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.7 %[0m
+[0;32mI (847400) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (847400) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (849450) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.7 %[0m
+[0;32mI (849450) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (849450) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (851280) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (851520) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (851520) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (851520) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (853570) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (853570) VUON_UOM: Anh sang: 68 lx[0m
+[0;32mI (853570) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (855620) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (855620) VUON_UOM: Anh sang: 67 lx[0m
+[0;32mI (855620) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3196)[0m
+[0;32mI (857670) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (857670) VUON_UOM: Anh sang: 67 lx[0m
+[0;32mI (857670) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (859720) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (859720) VUON_UOM: Anh sang: 67 lx[0m
+[0;32mI (859720) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (861770) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (861770) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (861770) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (863820) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (863820) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (863820) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (865870) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (865870) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (865870) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (867920) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (867920) VUON_UOM: Anh sang: 66 lx[0m
+[0;32mI (867920) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3204)[0m
+[0;32mI (869970) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (869970) VUON_UOM: Anh sang: 66 lx[0m
+[0;32mI (869970) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (872020) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (872020) VUON_UOM: Anh sang: 65 lx[0m
+[0;32mI (872020) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (874070) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.6 %[0m
+[0;32mI (874070) VUON_UOM: Anh sang: 64 lx[0m
+[0;32mI (874070) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (876120) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (876120) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (876120) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (878170) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (878170) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (878170) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (880220) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (880220) VUON_UOM: Anh sang: 63 lx[0m
+[0;32mI (880220) VUON_UOM: Do am dat: 0.1 % (ADC raw = 3198)[0m
+[0;32mI (881350) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (882290) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (882290) VUON_UOM: Anh sang: 62 lx[0m
+[0;32mI (882290) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (884340) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (884340) VUON_UOM: Anh sang: 61 lx[0m
+[0;32mI (884340) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (886390) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (886390) VUON_UOM: Anh sang: 60 lx[0m
+[0;32mI (886390) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3208)[0m
+[0;32mI (886390) VUON_UOM: >>> BOM TAT[0m
+[0;32mI (888440) VUON_UOM: Nhiet do: 32.1 C | Do am KK: 62.5 %[0m
+[0;32mI (888440) VUON_UOM: Anh sang: 60 lx[0m
+[0;32mI (888440) VUON_UOM: Do am dat: 0.2 % (ADC raw = 3197)[0m
+[0;32mI (890490) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (890490) VUON_UOM: Anh sang: 60 lx[0m
+[0;32mI (890490) VUON_UOM: Do am dat: 0.3 % (ADC raw = 3195)[0m
+[0;32mI (892540) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.4 %[0m
+[0;32mI (892540) VUON_UOM: Anh sang: 60 lx[0m
+[0;32mI (892540) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3208)[0m
+[0;32mI (894590) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (894590) VUON_UOM: Anh sang: 60 lx[0m
+[0;32mI (894590) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (896640) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (896640) VUON_UOM: Anh sang: 58 lx[0m
+[0;32mI (896640) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (898690) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (898690) VUON_UOM: Anh sang: 58 lx[0m
+[0;32mI (898690) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (900740) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (900740) VUON_UOM: Anh sang: 59 lx[0m
+[0;32mI (900740) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (902790) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (902790) VUON_UOM: Anh sang: 57 lx[0m
+[0;32mI (902790) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (904840) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (904840) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (904840) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3203)[0m
+[0;32mI (906890) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (906890) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (906890) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (908940) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (908940) VUON_UOM: Anh sang: 57 lx[0m
+[0;32mI (908940) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3200)[0m
+[0;32mI (910990) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (910990) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (910990) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (913040) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.4 %[0m
+[0;32mI (913040) VUON_UOM: Anh sang: 55 lx[0m
+[0;32mI (913040) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3206)[0m
+[0;32mI (915090) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (915090) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (915090) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3207)[0m
+[0;32mI (916420) VUON_UOM: >>> BOM BAT[0m
+[0;32mI (917160) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (917160) VUON_UOM: Anh sang: 40 lx[0m
+[0;32mI (917160) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3201)[0m
+[0;32mI (919210) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.5 %[0m
+[0;32mI (919210) VUON_UOM: Anh sang: 55 lx[0m
+[0;32mI (919210) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3205)[0m
+[0;32mI (921260) VUON_UOM: Nhiet do: 32.2 C | Do am KK: 62.4 %[0m
+[0;32mI (921260) VUON_UOM: Anh sang: 56 lx[0m
+[0;32mI (921260) VUON_UOM: Do am dat: 0.0 % (ADC raw = 3202)[0m
+[0;32mI (921490) VUON_UOM: >>> BOM TAT[0m

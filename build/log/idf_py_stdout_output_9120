@@ -1,0 +1,496 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 25 2026 01:51:29[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b31ch ( 45852) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001b344 vaddr=3fc93000 size=02de4h ( 11748) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001e130 vaddr=40374000 size=01ee8h (  7912) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a23ch (107068) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003a264 vaddr=40375ee8 size=0d034h ( 53300) load[0m
+[0;32mI (141) esp_image: segment 5: paddr=000472a0 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (148) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (159) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (159) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (160) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (162) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (166) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (170) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (174) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (179) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (184) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (189) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (194) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (198) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (202) esp_psram: Speed: 40MHz[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (938) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (947) cpu_start: Pro cpu start user code[0m
+[0;32mI (948) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (948) app_init: Application information:[0m
+[0;32mI (948) app_init: Project name:     do_an_thiet_ke_he_thong_nhung[0m
+[0;32mI (953) app_init: App version:      v5.4[0m
+[0;32mI (957) app_init: Compile time:     Oct 18 2026 07:42:22[0m
+[0;32mI (962) app_init: ELF file SHA256:  1f56d31d9...[0m
+[0;32mI (966) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (970) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (974) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (978) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (982) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (988) heap_init: At 3FC96748 len 00052FC8 (331 KiB): RAM[0m
+[0;32mI (993) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (998) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1004) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (1009) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1016) spi_flash: detected chip: mxic[0m
+[0;32mI (1019) spi_flash: flash io: dio[0m
+[0;32mI (1023) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1029) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1036) main_task: Started on CPU0[0m
+[0;32mI (1066) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1066) main_task: Calling app_main()[0m
+[0;32mI (1066) SOIL_SENSOR: Khoi dong he thong doc do am dat...[0m
+[0;32mI (1086) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2373[0m
+[0;32mI (1096) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (1106) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1116) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2394[0m
+[0;32mI (1126) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1136) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (1146) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1156) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (1166) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1176) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2392[0m
+[0;32mI (1186) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (1196) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (1206) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1216) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (1226) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (1236) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2392[0m
+[0;32mI (1246) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1256) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2393[0m
+[0;32mI (1266) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1276) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (1286) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (1296) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1306) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (1316) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (1326) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1336) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2392[0m
+[0;32mI (1346) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1356) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (1366) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1376) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2393[0m
+[0;32mI (1386) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (1396) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (1406) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (1416) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2392[0m
+[0;32mI (1426) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1436) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1446) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (1456) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1466) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1476) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1486) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (1496) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (1506) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1516) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1526) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1536) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (1546) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1556) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (1566) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1576) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1586) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1596) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (1606) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (1616) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1626) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (1636) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (1646) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (1656) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1666) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1676) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (1686) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1696) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (1706) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (1716) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1726) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (1736) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (1746) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1756) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1766) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1776) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (1786) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1796) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (1806) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (1816) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (1826) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1836) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (1846) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (1856) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (1866) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1876) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (1886) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (1896) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (1906) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1916) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (1926) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (1936) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (1946) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1956) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (1966) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (1976) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (1986) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (1996) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (2006) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2016) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2026) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2036) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (2046) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (2056) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2066) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2076) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2086) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2096) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2106) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2116) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2384[0m
+[0;32mI (2126) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2136) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2146) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2156) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2166) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (2176) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2186) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2196) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2206) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2216) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2226) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (2236) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2246) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2256) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2266) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2276) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2286) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2296) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (2306) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2316) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2326) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2336) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2346) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2356) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2366) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2376) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2386) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2396) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2406) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2416) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2426) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2436) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2446) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2456) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2466) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (2476) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2486) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2496) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2506) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2516) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2526) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2536) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2546) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2556) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2566) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2576) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2586) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2596) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2606) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2616) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2626) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2636) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2646) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2656) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2666) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2676) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2686) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2696) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2706) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (2716) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2726) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2736) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2746) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2756) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2766) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2776) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2786) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2796) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2806) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (2816) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2826) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2836) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (2846) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2856) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2866) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2876) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (2886) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2896) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2906) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (2916) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2926) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2936) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (2946) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (2956) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (2966) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (2976) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (2986) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (2996) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3006) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3016) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3026) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3036) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3046) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3056) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3066) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (3076) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3086) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3096) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (3106) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (3116) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3126) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3136) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3146) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3156) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3166) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3176) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (3186) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3196) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3206) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3216) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (3226) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3236) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3246) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3256) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3266) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3276) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3286) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3296) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3306) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (3316) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3326) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (3336) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3346) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3356) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3366) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (3376) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (3386) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3396) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3406) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (3416) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3426) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (3436) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3446) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (3456) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3466) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (3476) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3486) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3496) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (3506) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (3516) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (3526) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (3536) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3546) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (3556) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3566) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3576) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (3586) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3596) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2376[0m
+[0;32mI (3606) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (3616) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (3626) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3636) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3646) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3656) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3666) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (3676) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (3686) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (3696) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3706) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (3716) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3726) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3736) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3746) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3756) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (3766) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3776) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3786) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (3796) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (3806) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3816) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3826) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (3836) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (3846) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3856) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3866) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3876) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3886) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3896) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3906) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (3916) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3926) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (3936) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (3946) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (3956) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (3966) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (3976) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (3986) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (3996) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (4006) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4016) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4026) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4036) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (4046) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4056) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4066) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (4076) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4086) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (4096) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4106) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2393[0m
+[0;32mI (4116) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4126) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (4136) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4146) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4156) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4166) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4176) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4186) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4196) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (4206) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4216) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4226) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4236) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (4246) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4256) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4266) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4276) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4286) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4296) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4306) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4316) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (4326) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (4336) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4346) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4356) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4366) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4376) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4386) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4396) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (4406) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4416) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (4426) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4436) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (4446) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (4456) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4466) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4476) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4486) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4496) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4506) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4516) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2376[0m
+[0;32mI (4526) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2390[0m
+[0;32mI (4536) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4546) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4556) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (4566) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4576) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4586) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4596) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (4606) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4616) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4626) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4636) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4646) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (4656) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (4666) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4676) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4686) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4696) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (4706) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (4716) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4726) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2393[0m
+[0;32mI (4736) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4746) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (4756) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (4766) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4776) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4786) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4796) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (4806) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4816) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (4826) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (4836) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2375[0m
+[0;32mI (4846) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4856) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (4866) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (4876) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4886) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4896) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4906) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (4916) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (4926) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (4936) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (4946) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4956) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (4966) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2385[0m
+[0;32mI (4976) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (4986) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (4996) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (5006) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2388[0m
+[0;32mI (5016) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (5026) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2391[0m
+[0;32mI (5036) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (5046) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (5056) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (5066) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (5076) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (5086) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2386[0m
+[0;32mI (5096) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (5106) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2382[0m
+[0;32mI (5116) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (5126) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (5136) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2380[0m
+[0;32mI (5146) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (5156) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (5166) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (5176) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (5186) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (5196) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2377[0m
+[0;32mI (5206) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2389[0m
+[0;32mI (5216) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (5226) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2383[0m
+[0;32mI (5236) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2378[0m
+[0;32mI (5246) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (5256) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (5266) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (5276) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2379[0m
+[0;32mI (5286) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
+[0;32mI (5296) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2381[0m
+[0;32mI (5306) SOIL_SENSOR: Gia tri ADC Do am dat tren GPIO 4: 2387[0m
